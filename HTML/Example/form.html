@@ -1,0 +1,243 @@
+﻿<!DCOTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Welcome to Lian's Website</title>
+	<meta name="description" content="Lian's Web Page">
+	<meta name="keywords" content="Lian, ncnu, csie, taiwan">
+	<meta name="author" content="Lian Lin">
+	<style type="text/css">
+	body{
+		background-image:url('img/background.jpg'); 
+		background-color:gray; 
+		font-family:微軟正黑體;
+		
+	}
+	
+	table {
+		border-style:double; 
+		border-color:orange; 
+		border-collapse:collapse;
+		background-color:rgba(255,255,255,0.7);
+		
+	}
+	
+	td{
+		border-style:double;
+		border-color:orange; 
+		border-width:2px;		
+		text-align:left;
+	}
+	
+	th{
+		border-style:double;
+		border-color:orange; 
+		border-width:2px;		
+		vertical-align:top;
+		text-align : right;
+		
+	}
+	
+	fieldset{
+		border-style:double;
+		border-width:2px;
+		border-color:black;
+		margin:5px;
+	}
+	
+	legend{
+		font-style:bold;
+		font-size:20px;
+		background-color:rgba(255,255,255,0.7);
+		border-style:double;
+		
+	}
+	
+	input[type]{
+		width:250px;
+	}
+	input[type="radio"]{
+		width:10px;
+	}
+	input[type="checkbox"]{
+		width:10px;
+	}
+	input[type="email"]{
+		width:250px;
+	}
+	
+	
+	</style>
+</head>
+<body>
+	<!-- Page Container -->
+	<div id="container" align="center">
+		<!-- Header -->
+		<header>
+			<!-- Title -->
+			<div id="title">
+				<h1>Lian's Website</h1>
+			</div>
+		</header>
+		<hr/>
+		<!-- Main Content-->		
+		<div>
+			<!-- Form -->
+			<section id="myform">
+				<h1>顧客滿意度調查表</h1>
+				<p>
+			  	感謝您的來店，填寫完滿意度調查表後可獲得免費甜點兌換卷乙張
+				</p>
+				<form action="http://ycchen.im.ncnu.edu.tw/join.php" method="POST">
+					<fieldset>
+						<legend>顧客資料</legend>
+						<div>
+						<table border="3px" style="">
+							<tr>
+								<th>
+								<label for="name">姓名</label>
+								</th>
+								<td >
+								<input type="text" name="name" id="name" placeholder="例 : 林禮安" autofocus>
+								</td>
+							</tr>
+							<tr>
+								<th>
+								<label for="phone">手機</label>
+								</th>
+								<td>
+								<input type="tel" name="phone" id="phone" placeholder="例 : 0932-655-132">
+								</td>
+							</tr>
+							<tr>
+								<th>
+								<label for="email">Email</label>
+								</th>
+								<td>
+								<input type="email" name="email" id="email" placeholder="例 : s99321009@mail1.ncnu.edu.tw" >
+								</td>
+							</tr>								
+						</table>
+						</div>
+					</fieldset>	
+					<fieldset>
+						<legend>消費資訊</legend>
+						<table border="3px" style="">
+							<tr>
+								<th>
+								<label for="restaurant">用餐地點</label>
+								</th>
+								<td >
+								<select name="restaurant" id="restaurant">
+									<option>台中店</option>
+									<option>南投店</option>
+									<option>台北店</option>
+								</select>
+								</td>
+							</tr>
+							<tr>
+								<th>
+								<label for="mdate">用餐日期</label>
+								</th>
+								<td>
+								<input type="datetime-local" name="mdate" id="mdate" placeholder="例: 2012-09-06">
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<label for="know[]">如何得知本店</label>
+								</th>
+								<td>
+									<input type="checkbox" name="know[]" id="know" value="1" >廣告宣傳</input>
+									<input type="checkbox" name="know[]" id="know" value="2" >朋友介紹</input>
+									<input type="checkbox" name="know[]" id="know" value="3" >路過嘗鮮</input><br/>
+									<input type="checkbox" name="know[]" id="know" value="4" >網路資訊</input>
+									<input type="checkbox" name="know[]" id="know" value="5" >優惠促銷</input>
+									<input type="checkbox" name="know[]" id="know" value="6" >其他</input>
+								</td>
+							</tr>								
+						</table>
+					</fieldset>	
+					<fieldset>
+						<legend>滿意度調查</legend>
+						<table border="3px" style="">
+							<tr>
+								<th>
+									<label for="meal1">前菜</label>
+								</th>
+								<td >
+									<input type="radio" name="meal1" id="meal1" value="1">非常不滿意</input>
+									<input type="radio" name="meal1" id="meal1" value="2">不滿意</input>
+									<input type="radio" name="meal1" id="meal1" value="3">普通</input>
+									<input type="radio" name="meal1" id="meal1" value="4">滿意</input>
+									<input type="radio" name="meal1" id="meal1" value="5">非常滿意</input>
+								</select>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<label for="meal2">主餐</label>
+								</th>
+								<td >
+									<input type="radio" name="meal2" id="meal2" value="1">非常不滿意</input>
+									<input type="radio" name="meal2" id="meal2" value="2">不滿意</input>
+									<input type="radio" name="meal2" id="meal2" value="3">普通</input>
+									<input type="radio" name="meal2" id="meal2" value="4">滿意</input>
+									<input type="radio" name="meal2" id="meal2" value="5">非常滿意</input>
+								</select>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<label for="meal3">甜點</label>
+								</th>
+								<td >
+									<input type="radio" name="meal3" id="meal3" value="1">非常不滿意</input>
+									<input type="radio" name="meal3" id="meal3" value="2">不滿意</input>
+									<input type="radio" name="meal3" id="meal3" value="3">普通</input>
+									<input type="radio" name="meal3" id="meal3" value="4">滿意</input>
+									<input type="radio" name="meal3" id="meal3" value="5">非常滿意</input>
+								</select>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<label for="service">服務品質</label>
+								</th>
+								<td >
+									<input type="radio" name="service" id="service" value="1">非常不滿意</input>
+									<input type="radio" name="service" id="service" value="2">不滿意</input>
+									<input type="radio" name="service" id="service" value="3">普通</input>
+									<input type="radio" name="service" id="service" value="4">滿意</input>
+									<input type="radio" name="service" id="service" value="5">非常滿意</input>
+								</select>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<label for="advice">其他建議</label>
+								</th>
+								<td >
+									<textarea name="advice" cols="40" rows="6"></textarea>								
+								</td>
+							</tr>
+						</table>
+						
+					</fieldset>
+					<div class="field">
+						<button type="submit">填寫完畢</button>
+						<button type="reset">清除資料</button>
+					</div>
+				</form>
+			</section>
+		</div>
+		<!-- Footer -->
+		<hr/>
+		<footer>
+			<small>&copy; 2014 design by Lian Lin All Rights Reserved</small>
+		</footer>
+	</div>
+	
+</body>
+</html>
+	
